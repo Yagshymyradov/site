@@ -1,0 +1,387 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14;
+	-ms-text-size-adjust:100%;
+	-moz-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;	
+}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display:none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+/*--------------------*/
+
+
+body{
+	font-family: Arial;
+	background: #8E8387;
+}
+
+.wrapper{
+	min-height: 100%;
+	overflow:hidden; 
+	color: #fff;
+}
+._container{
+	max-width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+/*-------header----------*/
+.header{
+	padding: 0 20px;
+}
+.header__container{
+}
+.header__body{}
+.header__menu{}
+.menu{}
+.menu__list{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+.menu__list li{
+	display: inline-block;
+	margin: 0 20px 0 0;
+}
+.menu__list a{
+	color: #fff;
+	font-size: 12px;
+}
+.menu__selected{
+	padding: 5px 2px 5px 2px;
+	background-color: red;
+}
+.heder__image{
+	max-width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	object-fit: cover;
+	opacity: 0.7;
+}
+.header__item{
+
+}
+.heder__image img{
+
+}
+/*-----------Main------------*/
+.main{
+	margin: 100px 0 0 0;
+	position: relative;
+	z-index: 5;
+	padding: 0 20px;
+}
+.main__container{
+}
+/*----------Main-header--------*/
+
+.main__header{
+	text-align: center;
+	margin: 0 0 50px 0;
+}
+h1{
+	font-size: 30px;
+	font-weight: 700;
+}
+.main__block{
+	box-shadow: 0px 0px 10px 5px #000;
+}
+/*------Section---------*/
+/*------Section-Desinger--------*/
+.desinger{}
+.disenger__container{
+	padding: 50px 40% 50px 30px;
+}
+.desinger__body{
+}
+.desinger__body > *:not(:last-child){
+	margin: 0 0 30px 0;
+}
+.desinger__title{
+	text-align: center;
+	font-size: 50px;
+}
+.desinger__subtitle{
+	text-align: center;
+	font-weight: 700;
+}
+.desinger__text{
+	line-height: 150%;
+	font-size: 14px;
+}
+.desinger__text p:not(:last-child){
+	margin: 0 0 15px 0;
+}
+.desinger__click{
+	text-align: center;
+}
+.desinger__btn{}
+.btn{
+	padding: 10px 20px;
+	background: red;
+	color: #fff;
+	font-size: 12px;
+}
+/*---------Section-Creative------------*/
+.creative__container{
+	color: #A8A7AC;
+	line-height: 150%;
+}
+/*.creative__body:before{
+	content: "";
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background: #C1C1C1;
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	margin: 0 0 -50% 0;
+	z-index: 9;
+}*/
+.creative__container{
+	position: relative;
+	background: rgba(43,42,48, 0.7)
+}
+.creative__body{
+	padding: 70px 20px;
+}
+.creative__column{
+}
+.creative__row{
+	margin: 0 -25px;
+	display: flex;
+}
+.creative__prefessional{
+	padding: 0 25px;
+	flex: 0 1 50%;
+}
+.prefessional{}
+.prefessional__body{}
+.prefessional__body > *:not(:last-child){
+	margin: 0 0 20px 0;
+}
+.prefessional__title{}
+.title{
+	font-size: 18px;
+	text-align: center;
+}
+.text{
+	font-size: 14px;
+}
+.prefessional__text{}
+.prefessional__text p:not(:last-child){
+	margin: 0 0 10px 0;
+}
+.prefessional__click{
+	text-align: right;
+}
+.prefessional__btn{
+	
+}
+
+.creative__team{
+	padding: 0 25px;
+	flex: 0 1 50%;
+}
+.team{}
+.team__body{}
+.team__body > *:not(:last-child){
+	margin: 0 0 20px 0;
+}
+.team__title{}
+.team__row{}
+.team__column{
+	margin: 0 -15px;
+	display: flex;
+}
+.team__column:not(:last-child){
+	margin: 0 -15px 10px -15px;
+}
+.team__image{
+	padding: 0 15px;
+	flex: 0 0 auto;
+}
+.team__image img{
+	max-width:100%;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.team__item{
+	padding: 0 15px;
+	flex: 1 1 auto;
+}
+.team__person{
+
+}
+.team__jobs{}
+.team__text{}
+/*--------Section-Work------------*/
+.work{
+	background: #C1C1C1;
+	color: #131315;
+}
+.work__container{
+	padding: 0 20px 50px 20px;  
+}
+.work__item{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: -50px;
+}
+.work__buble{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: #C1C1C1;
+}
+.work__bottom{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	bottom: -100px;
+
+}
+.black{
+	background: #262427;
+}
+/*.work__container:before{
+	content: "";
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	z-index: 10;
+	background: #131315;
+}*/
+.work__container > *:not(:last-child){
+	margin: 0 0 20px 0;
+}
+.work__title{
+	text-align: center;
+}
+.work__manu{
+	text-align: center;
+}
+.work__list li{
+	display: inline-block;
+	margin: 0 0 0 10px;
+	border: 1px solid #131315;
+	padding: 5px 25px;
+	font-size: 12px;
+	border-radius: 5px;
+}
+.work__link a{
+	color: #131315;
+}
+.work__images{
+	display: flex;
+	flex-wrap: wrap;
+}
+.work__image{
+	flex: 0 1 50%;
+}
+.work__image img{
+	object-fit: cover;
+	max-width: 100%
+}
+/*-------Footer--------*/
+.footer{
+	background: #262427;
+	padding: 150px 0 20px 0;
+	margin: -70px 0 0 0;
+	position: relative;
+	z-index: 2;
+}
+.footer__container{
+	padding: 0 40px;
+}
+.footer__body{
+	text-align: center;
+}
+.footer__title{
+	margin: 0 0 20px 0;
+}
+.footer__form{}
+.footer__row{
+	margin: 0 -10px;
+	display: flex;
+}
+.footer__column{
+	padding: 0 10px;
+	flex: 1 1 50%;
+}
+.footer__left{
+}
+.footer__text{ 
+}
+.footer__text input{
+	background: #3B363D;
+	padding: 15px;
+	border-radius: 10px;
+	margin: 0 0 10px 0;
+	min-width: 100%;
+}
+.footer__mail{}
+.footer__mail input{
+	background: #3B363D;
+	padding: 15px;
+	border-radius: 10px;
+	min-width: 100%;
+}
+.footer__right{
+}
+.footer__area{
+
+}
+textarea{
+	height: 102px;
+	min-width: 100%;
+	display: block;
+	background: #3B363D;
+	padding: 15px;
+	border-radius: 10px;
+}
+.footer__button{
+	margin: 30px 0;
+}
+.footer__btn{
+	padding: 10px 20px;
+	color: #fff;
+	background: #FD0101;
+}
+.footer__address{
+	font-size: 10px;
+}
